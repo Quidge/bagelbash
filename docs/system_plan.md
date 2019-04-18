@@ -4,24 +4,19 @@ Process adapted do and inspired by by [Nirosh's article on codeproject](https://
 
 ## Main questions:
 
-1. What are the inputs?
+1. **What are the inputs?** User selection of various items and submission of orders detailing those selections.
 
-   User selection of various items and submission of orders detailing those selections.
+2. **What are the processes of the system?** bagelbash is a product browsing and ordering system. Ordering involves _product purchasing_ (which contains _ordering_, _browsing_, and _paying_.).
 
-2. What are the processes of the system?
+   1. **Do users have to be signed in to browse or purchase?** Users do not have to be signed in to browse, create, or submit/pay for orders.
 
-   bagelbash is a product browsing and ordering system. Users may initiate two processes: processes are _product purchasing_ (which contains _ordering_, _browsing_, and _paying_.) and _menu alteration_ (product creation, removal, or modification).
+   2. **What are the benefits of having an account and being signed in?** User information (payment details, email address, etc) can be persisted with a bagelbash account and reused for a second visit.
 
-   1. Do users have to be signed in to browse or purchase?
+   3. **Where are the menu items for browsing and order selection coming from?** Menu Item information is coming from the Menu API (Menu API is considered external to bagelbash and will not be covered here).
 
-   Users do not have to be signed in to browse, create, and submit/pay for orders.
+      1. **Where is the Menu API located?** Menu API is located at /menu/v1/api
 
-   2. What are the benefits of having an account and being signed in?
+3. **What is involved with ordering?** Product selection, payment processing, and order submission.
 
-   User information (payment details, email address, etc) can be saved and reused for a second visit. Signed in users who have Administrative permissions can add, remove, or alter menu items.
-
-   2.1.1.1 How can users gain Administrative permissions?
-   Users given
-
-3. What are the outputs?
+4. What are the outputs?
    Allow the users to select entrees from the menu, group those selections into orders, pay for those orders, and submit those orders.
