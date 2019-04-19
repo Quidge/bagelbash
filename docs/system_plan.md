@@ -2,6 +2,21 @@
 
 Process adapted to and inspired by by [Nirosh's article on codeproject](https://www.codeproject.com/Articles/16105/A-Practical-Approach-to-Computer-Systems-Design-an)
 
+## Glossary
+
+-  **User**: The user currently viewing the system from the website.
+   -  They may or may not need to have an account.
+   -  Purchases can be made with or without an account.
+-  **Menu**: The listing of items available for purchase.
+   -  Accessed through the Menu API at /menu/v1/api
+-  **MenuItem**: An item in the Menu listing.
+-  **Order**: An attribute on a User containing OrderItems (if any).
+   -  Users always have an Order, even if it is empty.
+-  **OrderItem**: An entity that links an Item to a User.
+   -  OrderItems also have quantity.
+-  **Cheque**: A 'calcified' representation of an Order at the time of Cheque creation. Contains ChequeItems.
+-  **ChequeItem**: A 'calcified' representation of an OrderItem at the time of ChequeItem creation.
+
 ## Main questions:
 
 1. **What are the inputs?** User selection of various items and submission of orders detailing those selections.
@@ -29,8 +44,4 @@ Process adapted to and inspired by by [Nirosh's article on codeproject](https://
       2. **What is the checkout process?** A user may initiate checkout from the website. They will enter their payment information to do so. When their payment information has validated, a Cheque will be created containing ChequeItems corresponding to the OrderItems.
       3. **How is an OrderItem different from a ChequeItem?** ChequeItems are 'calcified' OrderItems. If the price an Item changes (OrderItem.item.price) changes after a ChequeItem is created, the ChequeItem reflects the previous price.
 
-3. **What is involved with ordering?** Order creation, payment processing, and order submission.
-
-   1. **How does the order creation process work?** Menu Items are selected and added to an Order, which is transparently created upon the first
-
-4. **What are the outputs?** Allow the users to select Menu Items, group those selections into Orders, checkout and pay for those Orders, and submit those Orders.
+3. **What are the outputs?** Allow the users to select Menu Items, group those selections into Orders, checkout and pay for those Orders, and submit those Orders.
