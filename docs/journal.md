@@ -34,3 +34,15 @@ So that I can keep track of what I was thinking about in my last session.
   - Inventory (KISS version with a simple server taking no args that returns JSON)
     - prod: Apex/Now/some lambda
     - local: container
+
+## 5/6
+
+### Accomplished
+
+- Not a lot. I have a much bettre idea about how the local networks can work with docker, though. I wasn't grabbing onto that before.
+- I figured out how the `build` directive is used with `image`. Finally. That was confusing all of last week.
+- Decided to stick the Orders local DB into its own container and store data in a `volume`.
+
+### What I'm thinking about/todo next session:
+
+- Setup a prisma server container and get it linked to the mysql container.
