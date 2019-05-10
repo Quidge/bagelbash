@@ -46,3 +46,14 @@ So that I can keep track of what I was thinking about in my last session.
 ### What I'm thinking about/todo next session:
 
 - Setup a prisma server container and get it linked to the mysql container.
+
+## 5/10
+
+### Accomplished
+
+- I was able to get the gql playground up inside a container, but it doesn't seem to be able to find the db server. No errors on stdout for the mysql db container. :/
+
+### What I'm thinking about/todo next session:
+
+- Do the prisma init cli and select a local docker db with mysql. Try that with docker-compose and see if the same issue pops up. I feel like I've done this before but I kinda feel out of options. Maybe post on Prisma Slack?
+
