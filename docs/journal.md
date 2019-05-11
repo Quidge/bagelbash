@@ -57,3 +57,12 @@ So that I can keep track of what I was thinking about in my last session.
 
 - Do the prisma init cli and select a local docker db with mysql. Try that with docker-compose and see if the same issue pops up. I feel like I've done this before but I kinda feel out of options. Maybe post on Prisma Slack?
 
+## 5/11
+
+### Accomplished
+
+- I got a Prisma server running! Except I've done that already; the difference was I get it working enough that GraphQL Playground could view and interact with the Schema.
+
+### What I'm thinking about/todo next session:
+
+- Based on my difficulty with the above, I don't think I have a good grounding in what `prisma deploy` is doing, and what Prisma "services" are. I need to research that.
