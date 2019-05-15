@@ -66,3 +66,13 @@ So that I can keep track of what I was thinking about in my last session.
 ### What I'm thinking about/todo next session:
 
 - Based on my difficulty with the above, I don't think I have a good grounding in what `prisma deploy` is doing, and what Prisma "services" are. I need to research that.
+
+## 5/14
+
+### Accomplished
+
+- Well, I got a demo mysql/docker server up. Literally just followed the examples without skipping anything. It worked and I don't know what was different. Bittersweet.
+
+### What I'm thinking about/todo next session:
+
+- Build up a docker-compose.yml file/package.json in the bagelbash backend dir to to replicate the success I had with the demo. Maybe get as far as creating a schema.
